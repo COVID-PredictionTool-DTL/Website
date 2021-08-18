@@ -1,4 +1,9 @@
-function check(){
+/*
+Source Articles:
+https://www.frontiersin.org/articles/10.3389/fpubh.2020.00473/full
+*/
+
+function check() {
     var c = 0;
     var qa = document.quiz.q1.value;
     var qb = document.quiz.q2.value;
@@ -10,90 +15,153 @@ function check(){
     var qh = document.quiz.q8.value;
     var qi = document.quiz.q9.value;
     var qj = document.quiz.q10.value;
-    if(qa == "a" || qa == "b"){
-        c += 10;
-    }
-    if(qb == "a"){
+    var qk = document.quiz.q11.value;
+    var ql = document.quiz.q12.value;
+
+    //Question 1
+    if (qa == "a" || qa == "b" || qa == "c") {
         c += 0;
     }
-    if(qb == "b"){
-        c += 5;
+
+    //Question 2
+    if (qb == "a") {
+        c += 0.345;
     }
-    if(qb == "c"){
-        c += 8;
+    if (qb == "b") {
+        c += 0.699;
     }
-    if(qb == "d"){
-        c += 10;
+    if (qb == "c") {
+        c += 0.731;
     }
-    if(qc == "a"){
-        c += 10;
+    if (qb == "d") {
+        c += 0.745;
     }
-    if(qc == "b"){
-        c += 5;
+
+    //Question 3
+    if (qc == "a") {
+        c += 1;
     }
-    if(qc == "c"){
+    if (qc == "b") {
+        c += 0.848;
+    }
+    if (qc == "c") {
+        c += 0.366;
+    }
+
+    //Question 4
+    if (qd == "a") {
+        c += 1;
+    }
+    if (qd == "b") {
+        c += 0.5;
+    }
+    if (qd == "c") {
         c += 0;
     }
-    if(qd == "a"){
-        c += 10;
+
+    //Question 5
+    if (qe == "a") {
+        c += 0.883;
     }
-    if(qd == "b"){
-        c += 5;
+    if (qe == "b") {
+        c += 0.687;
     }
-    if(qd == "c"){
-        c += 0;
+    if (qe == "c") {
+        c += 0.221;
     }
-    if(qe == "a"){
-        c += 10;
+
+    //Question 6
+    if (qf == "a") {
+        c += 0.883;
     }
-    if(qe == "b"){
-        c += 5;
+    if (qf == "b") {
+        c += 0.687;
     }
-    if(qe == "c"){
-        c += 0;
+    if (qf == "c") {
+        c += 0.221;
     }
-    if(qf == "a"){
-        c += 10;
+
+    //Question 7
+    if (qg == "a") {
+        c += 0.895;
     }
-    if(qf == "b"){
-        c += 5;
+    if (qg == "b") {
+        c += 0.843;
     }
-    if(qf == "c"){
-        c += 0;
+    if (qg == "c") {
+        c += 0.319;
     }
-    if(qg == "a"){
-        c += 10;
+
+    //Question 8
+    if (qh == "a") {
+        c += 0.821;
     }
-    if(qg == "b"){
-        c += 5;
+    if (qh == "b") {
+        c += 0.599;
     }
-    if(qg == "c"){
-        c += 0;
+    if (qh == "c") {
+        c += 0.332;
     }
-    if(qh == "a"){
-        c += 10;
+
+    //Question 9
+    if (qi == "a") {
+        c += 0.991;
     }
-    if(qh == "b"){
-        c += 5;
+    if (qi == "b") {
+        c += 0.861;
     }
-    if(qh == "c"){
-        c += 0;
+    if (qi == "c") {
+        c += 0.224;
     }
-    if(qi == "a"){
-        c += 10;
+
+    //Question 10
+    if (qj == "a") {
+        c += 1;
     }
-    if(qi == "b"){
-        c += 5;
+    if (qj == "b") {
+        c += 1;
     }
-    if(qi == "c"){
-        c += 0;
+
+    //Question 11
+    if (qk == "a") {
+        c += 0.856;
     }
-    if(qj == "a"){
-        c += 10;
+    if (qk == "b") {
+        c += 0.594;
     }
-    if(qj == "b"){
-        c += 5;
+
+    //Question 12
+    if (ql == "a") {
+        c += 1;
     }
+    if (ql == "b") {
+        c += 0.848;
+    }
+    if (ql == "c") {
+        c += 0.366;
+    }
+
+    c = c / 11;
+
     //document.write(`<h1 class="style1">"Chances of user suffering from COVID-19 are " + c + "%" </h1>`);
-    document.write('<h1 class="style1" style="color:blue; text-align:center; ">' + "Chances of user suffering from COVID-19 are " + c + "%" + '</h1>');
+
+    if (c > 0 && c < 0.4) {
+        document.write('<h1 class="style1" style="color:black; text-align:center; ">' + "<br>" + "Chances of user suffering from COVID-19 are " + c * 100 + "%" + "<br>" + "<hr>" + " <b>You are safe.</b> For further details, visit " + "<a href = `https://www.mohfw.gov.in/`>https://www.mohfw.gov.in/</a>" + '</h1>');
+    }
+    else if (c > 0.4 && c < 0.6) {
+        document.write('<h1 class="style1" style="color:green; text-align:center; ">' + "<br>" + "Chances of user suffering from COVID-19 are " + c * 100 + "%" + "<br>" + "<hr>" + " <b>You are advised to have RTPCR test.</b> For further details, visit " + "<a href = `https://www.mohfw.gov.in/`>https://www.mohfw.gov.in/</a>" + '</h1>');
+    }
+    else if (c > 0.6 && c < 0.8) {
+        document.write('<h1 class="style1" style="color:brown; text-align:center; ">' + "<br>" + "Chances of user suffering from COVID-19 are " + c * 100 + "%" + "<br>" + "<hr>" + " <b>You are advised to have RTPCR test, Chest X-RAY and Consult doctor.</b> For further details, visit " + "<a href = `https://www.mohfw.gov.in/`>https://www.mohfw.gov.in/</a>" + '</h1>');
+    }
+    else if (c > 0.8) {
+        document.write('<h1 class="style1" style="color:red; text-align:center; ">' + "<br>" + "Chances of user suffering from COVID-19 are " + c * 100 + "%" + "<br>" + "<hr>" + " <b>You are advised to have RTPCR test and get yourself admitted to hospital.</b> For further details, visit " + "<a href = `https://www.mohfw.gov.in/`>https://www.mohfw.gov.in/</a>" + '</h1>');
+    }
+    document.body.style.backgroundColor = "skyblue";
+    document.write(`<hr>`)
+    document.write('<h1 class="style1" style="color:black; text-align:center; ">' + "Book your vaccines here: " + "<a href = `https://www.cowin.gov.in/`>https://www.cowin.gov.in/</a>" + '</h1>');
+    document.write(`<hr>`)
+    document.write('<h1 class="style1" style="color:black; text-align:center; ">' + "Get COVID related updates here: " + "<a href = `https://www.covid19india.org/`>https://www.covid19india.org/</a>" + '</h1>');
+
+
 }
