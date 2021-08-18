@@ -13,6 +13,7 @@
   <title>COVID-19 Symptoms Based Detection Tool</title>
   <script type="text/javascript" src="main.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
+  
 
 </head>
 
@@ -20,11 +21,11 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">COVID-19 Symptoms Based Detection Tool</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      <!--<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
-      
+      </button>-->
+      <!--
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
@@ -50,17 +51,17 @@
           <li class="nav-item">
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
           </li>
-        </ul>
+        </ul>-->
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <button class="btn btn-outline-primary" type="submit">Search</button>
         </form>
       </div>
     
     </div>
   </nav><br>
 
-  <h1 class="text-center" style="color:rgb(41, 34, 34)";>Answer the following correctly</h1><hr>
+  <h1 class="text-center" style="color:rgb(41, 34, 34)";>Fill the form below:</h1><hr>
 
   <form name="quiz" id="quiz">
     <div class="container">
@@ -102,7 +103,7 @@
       <hr>
       <div>
         <h4>-> Are you having Cough:</h4>
-        <h6><input type="radio" name="q6" value="a"> A. Yes, Severe Coughn</h6>
+        <h6><input type="radio" name="q6" value="a"> A. Yes, Severe Cough</h6>
         <h6><input type="radio" name="q6" value="b"> B. Yes, Mild Cough</h6>
         <h6><input type="radio" name="q6" value="c"> C. No Cough</h6>
       </div>
@@ -134,11 +135,50 @@
         <h6><input type="radio" name="q10" value="b"> C. No</h6>
       </div>
       <hr>
-      <input type="button" class="btn btn-outline-success" name="" value="Submit" onclick="check()">
+      <div>
+        <h4>-> Do you feel like Vomiting:</h4>
+        <h6><input type="radio" name="q11" value="a"> A. Yes</h6>
+        <h6><input type="radio" name="q11" value="b"> C. No</h6>
+      </div>
+      <hr>
+      <div>
+        <h4>-> What is your Oxygen Level:</h4>
+        <h6><input type="radio" name="q12" value="a"> A. Greater than 100</h6>
+        <h6><input type="radio" name="q12" value="b"> B. Between 60 to 100</h6>
+        <h6><input type="radio" name="q12" value="c"> C. Less than 60</h6>
+      </div>
+      <hr>
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <input type="button" class="btn btn-outline-primary btn-lg" name="" value="Submit" onclick="check()">
+      </div>
     </div>
   </form>
   <br>
   <br>
+  <section class="">
+    <!-- Footer -->
+    <footer class="text-center text-white" style="background-color: rgb(28, 76, 131);">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: CTA -->
+        <section class="">
+          <p class="d-flex justify-content-center align-items-center">
+            <span class="me-3">Dedicated to Fronline Workers, Nurses, Doctors and all Corona Warriors!</span>
+          </p>
+        </section>
+        <!-- Section: CTA -->
+      </div>
+      <!-- Grid container -->
+  
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgb(28, 76, 131);">
+        © 2021 Copyright:
+        <a class="text-white" href="https://github.com/COVID-PredictionTool-DTL">COVID-PredictionTool-DTL</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </section>
   <!-- Optional JavaScript; choose one of the two! -->
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
