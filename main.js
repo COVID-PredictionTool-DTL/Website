@@ -25,7 +25,7 @@ function check() {
 
     //Question 2
     if (qb == "a") {
-        c += 0.345;
+        c += 0.145;
     }
     if (qb == "b") {
         c += 0.699;
@@ -45,7 +45,7 @@ function check() {
         c += 0.848;
     }
     if (qc == "c") {
-        c += 0.366;
+        c += 0.116;
     }
 
     //Question 4
@@ -67,7 +67,7 @@ function check() {
         c += 0.687;
     }
     if (qe == "c") {
-        c += 0.221;
+        c += 0.121;
     }
 
     //Question 6
@@ -78,7 +78,7 @@ function check() {
         c += 0.687;
     }
     if (qf == "c") {
-        c += 0.221;
+        c += 0.111;
     }
 
     //Question 7
@@ -89,7 +89,7 @@ function check() {
         c += 0.843;
     }
     if (qg == "c") {
-        c += 0.319;
+        c += 0.119;
     }
 
     //Question 8
@@ -100,7 +100,7 @@ function check() {
         c += 0.599;
     }
     if (qh == "c") {
-        c += 0.332;
+        c += 0.132;
     }
 
     //Question 9
@@ -111,34 +111,34 @@ function check() {
         c += 0.861;
     }
     if (qi == "c") {
-        c += 0.224;
+        c += 0.124;
     }
 
     //Question 10
     if (qj == "a") {
-        c += 1;
+        c += 0.8;
     }
     if (qj == "b") {
-        c += 1;
+        c += 0.2;
     }
 
     //Question 11
     if (qk == "a") {
-        c += 0.856;
+        c += 0.756;
     }
     if (qk == "b") {
-        c += 0.594;
+        c += 0.194;
     }
 
     //Question 12
     if (ql == "a") {
-        c += 1;
+        c += 0.111;
     }
     if (ql == "b") {
-        c += 0.848;
+        c += 0.648;
     }
     if (ql == "c") {
-        c += 0.366;
+        c += 1;
     }
 
     c = c / 11;
