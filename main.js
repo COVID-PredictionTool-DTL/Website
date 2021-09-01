@@ -145,18 +145,21 @@ function check() {
 
     //document.write(`<h1 class="style1">"Chances of user suffering from COVID-19 are " + c + "%" </h1>`);
 
+    
     if (c > 0 && c < 0.4) {
-        document.write('<h1 class="style1" style="color:black; text-align:center; ">' + "<br>" + "Chances of user suffering from COVID-19 are " + c * 100 + "%" + "<br>" + "<hr>" + " <b>You are safe.</b> For further details, visit " + "<a href = `https://www.mohfw.gov.in/`>https://www.mohfw.gov.in/</a>" + '</h1>');
+        document.write('<h1 class="style1" style="color:black; text-align:center; ">' + "<br>" + "Chances of user suffering from COVID-19 are " + c * 100 + "%" + "<br>" + "<hr>" + " <b>You are safe.</b> For further details, visit " + "<a href = `https://www.mohfw.gov.in/`>https://www.mohfw.gov.in/</a>" + "<br>" + "<hr>" + " <b>You are advised to go through following diet chart:</b> " + "<a href = `https://covid-predictiontool-dtl.github.io/Diet-Plan-No-Covid/`>DIET CHART</a>" + '</h1>');
     }
     else if (c > 0.4 && c < 0.6) {
-        document.write('<h1 class="style1" style="color:green; text-align:center; ">' + "<br>" + "Chances of user suffering from COVID-19 are " + c * 100 + "%" + "<br>" + "<hr>" + " <b>You are advised to have RTPCR test.</b> For further details, visit " + "<a href = `https://www.mohfw.gov.in/`>https://www.mohfw.gov.in/</a>" + '</h1>');
+        document.write('<h1 class="style1" style="color:green; text-align:center; ">' + "<br>" + "Chances of user suffering from COVID-19 are " + c * 100 + "%" + "<br>" + "<hr>" + " <b>You are advised to have RTPCR test.</b> For further details, visit " + "<a href = `https://www.mohfw.gov.in/`>https://www.mohfw.gov.in/</a>" + "<br>" + "<hr>" + " <b>You are advised to go through following diet chart:</b> " + "<a href = `https://covid-predictiontool-dtl.github.io/Diet-Plan-Mild-Covid/`>DIET CHART</a>" + '</h1>');
     }
     else if (c > 0.6 && c < 0.8) {
-        document.write('<h1 class="style1" style="color:brown; text-align:center; ">' + "<br>" + "Chances of user suffering from COVID-19 are " + c * 100 + "%" + "<br>" + "<hr>" + " <b>You are advised to have RTPCR test, Chest X-RAY and Consult doctor.</b> For further details, visit " + "<a href = `https://www.mohfw.gov.in/`>https://www.mohfw.gov.in/</a>" + '</h1>');
+        document.write('<h1 class="style1" style="color:brown; text-align:center; ">' + "<br>" + "Chances of user suffering from COVID-19 are " + c * 100 + "%" + "<br>" + "<hr>" + " <b>You are advised to have RTPCR test, Chest X-RAY and Consult doctor.</b> For further details, visit " + "<a href = `https://www.mohfw.gov.in/`>https://www.mohfw.gov.in/</a>" + "<br>" + "<hr>" + " <b>You are advised to go through following diet chart:</b> " + "<a href = `https://covid-predictiontool-dtl.github.io/Diet-Plan-Mild-Covid/`>DIET CHART</a>" + '</h1>');
     }
     else if (c > 0.8) {
-        document.write('<h1 class="style1" style="color:red; text-align:center; ">' + "<br>" + "Chances of user suffering from COVID-19 are " + c * 100 + "%" + "<br>" + "<hr>" + " <b>You are advised to have RTPCR test and get yourself admitted to hospital.</b> For further details, visit " + "<a href = `https://www.mohfw.gov.in/`>https://www.mohfw.gov.in/</a>" + '</h1>');
+        document.write('<h1 class="style1" style="color:red; text-align:center; ">' + "<br>" + "Chances of user suffering from COVID-19 are " + c * 100 + "%" + "<br>" + "<hr>" + " <b>You are advised to have RTPCR test and get yourself admitted to hospital.</b> For further details, visit " + "<a href = `https://www.mohfw.gov.in/`>https://www.mohfw.gov.in/</a>" + "<br>" + "<hr>" + " <b>You are advised to go through following diet chart:</b> " + "<a href = `https://covid-predictiontool-dtl.github.io/Diet-Plan-Severe-Covid/`>DIET CHART</a>" + '</h1>');
     }
+
+
     document.body.style.backgroundColor = "skyblue";
     document.write(`<hr>`)
     document.write('<h1 class="style1" style="color:black; text-align:center; ">' + "Book your vaccines here: " + "<a href = `https://www.cowin.gov.in/`>https://www.cowin.gov.in/</a>" + '</h1>');
